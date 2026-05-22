@@ -1,45 +1,50 @@
 <!doctype html>
 <html lang="en-NZ">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nikky Pudney | Digital Business Card</title>
-  <style>
-    body{margin:0;font-family:system-ui;background:radial-gradient(900px 520px at 15% 10%, rgba(0,163,161,.22), transparent 55%),radial-gradient(820px 520px at 85% 90%, rgba(0,51,141,.26), transparent 58%),#070A12;color:#F4F7FF;display:flex;align-items:center;justify-content:center;min-height:100vh}
-    .card{max-width:420px;width:100%;background:#0E1426;border-radius:20px;overflow:hidden}
-    .banner{padding:20px;background:linear-gradient(135deg,#00338D,#00A3A1)}
-    .name{font-size:1.5rem;margin:0}
-    .role,.meta{margin:4px 0}
-    .content{padding:16px}
-    .headline{margin-bottom:12px}
-    .grid{display:grid;gap:10px}
-    .btn{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:12px;color:white;text-decoration:none}
-    .qrwrap{text-align:center;margin-top:16px}
-    .qrimg{width:200px;border-radius:12px}
-    .footer{padding:14px;font-size:.85rem;color:rgba(255,255,255,.7)}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nikky Pudney</title>
+<style>
+body{margin:0;font-family:system-ui;background:
+radial-gradient(800px 600px at 20% 20%,rgba(31,111,255,.2),transparent 60%),
+radial-gradient(800px 600px at 80% 20%,rgba(0,179,214,.2),transparent 60%),
+#0a1222;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{max-width:420px;width:100%;background:#0f172a;border-radius:20px;overflow:hidden}
+.banner{padding:20px;background:linear-gradient(120deg,#00b3d6,#1f6fff)}
+.name{font-size:22px;font-weight:700}
+.role{font-size:14px;margin-top:4px}
+.meta{font-size:13px;margin-top:6px}
+.content{padding:18px}
+.headline{margin-bottom:12px;font-size:14px;color:#ccc}
+.grid{display:flex;flex-direction:column;gap:10px}
+.btn{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:12px;background:#121c33;color:#fff;text-decoration:none}
+.btn:hover{background:#172448}
+.qrwrap{text-align:center;margin-top:14px}
+.qrimg{width:160px;margin-top:10px}
+.footer{padding:14px;font-size:12px;color:#aaa;text-align:center}
+</style>
 </head>
 <body>
-  <div class="card">
-    <div class="banner">
-      <h1 class="name">Nikky Pudney</h1>
-      <div class="role">Senior Manager | KPMG - Private Enterprise</div>
-      <div class="meta">Hamilton, New Zealand</div>
-    </div>
-    <div class="content">
-      <div class="headline">ONE LINER</div>
-      <div class="grid">
-        <a class="btn" href="first-last.vcf">Save contact (.vcf)</a>
-        <a class="btn" href="mailto:npudney@kpmg.co.nz">Email</a>
-        <a class="btn" href="tel:+64212178667">Mobile</a>
-        <a class="btn" href="#">Book time</a>
-        <a class="btn" href="#">LinkedIn</a>
-      </div>
-      <div class="qrwrap">
-        <img src="qr.png" class="qrimg" />
-      </div>
-    </div>
-    <div class="footer">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</div>
+<div class="card">
+  <div class="banner">
+    <div class="name">Nikky Pudney</div>
+    <div class="role">Senior Manager · KPMG - Private Enterprise</div>
+    <div class="meta">Hamilton, New Zealand</div>
   </div>
+  <div class="content">
+    <div class="headline"></div>
+    <div class="grid">
+      <a class="btn" href="mailto:npudney@kpmg.co.nz"><span>Email</span><span>npudney@kpmg.co.nz</span></a>
+      <a class="btn" href="tel:+6478586517"><span>Mobile</span><span>+64 7 858 6517</span></a>
+      <a class="btn" href="#"><span>Book time</span><span></span></a>
+      <a class="btn" href="#"><span>LinkedIn</span><span></span></a>
+      <a class="btn" href="nikky-pudney.vcf"><span>Save contact (.vcf)</span><span></span></a>
+    </div>
+    <div class="qrwrap">
+      <img class="qrimg" src="qr.png" alt="QR code" />
+    </div>
+  </div>
+  <div class="footer">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</div>
+</div>
 </body>
 </html>
